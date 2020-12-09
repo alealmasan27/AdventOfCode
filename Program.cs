@@ -1,0 +1,52 @@
+﻿using System;
+
+namespace AdventOfCode
+{
+    public class Program
+    {
+        private static void Main()
+        {
+            var day1 = new Day01.Day01();
+            var (nr1, nr2) = day1.TwoNumbersThatSumTo2020();
+            Console.WriteLine($"==Day01==\nThe multiplication of two numbers gives: {nr1 * nr2}");
+
+            var threeNumbersThatSum2020 = day1.ThreeNumbersThatSumTo2020();
+            Console.WriteLine($"The multiplication of three numbers gives: {threeNumbersThatSum2020.Item1 * threeNumbersThatSum2020.Item2 * threeNumbersThatSum2020.Item3}");
+
+            var day2 = new Day02.Day02();
+            Console.WriteLine($"==Day02==\nThere are {day2.CountValidPasswords()} passwords valid");
+            Console.WriteLine($"There are {day2.CountValidPasswordsWithPositions()} correct passwords");
+
+            var day3 = new Day03.Day03();
+            Console.WriteLine($"==Day03==\nThere are {day3.CountTrees(1, 3)} in the way.");
+            Console.WriteLine($"There are {day3.CountTrees(1, 1) * day3.CountTrees(1, 3) * day3.CountTrees(1, 5) * day3.CountTrees(1, 7) * day3.CountTrees(2, 1)} in the way.");
+
+            var day4 = new Day04.Day04();
+            Console.WriteLine($"==Day04==\nThere are {day4.CountValidPassports()} valid passports.");
+            Console.WriteLine($"There are {day4.CountValidAndCorrectPassports()} valid passports.");
+
+            var day5 = new Day05.Day05();
+            Console.WriteLine($"==Day05==\nThe highest seat id is {day5.HighestSeatId()}");
+            Console.WriteLine($"Your seat id is {day5.FindYourSeatId()}");
+
+            var day6 = new Day06.Day06();
+            Console.WriteLine($"==Day06==\nThe sum of the counts is {day6.SumOfYesAnswers()}");
+            Console.WriteLine($"The sum of the questions to which all answered yes is {day6.SumOfEveryoneYesAnswers()}");
+
+            var day7 = new Day07.Day07();
+            Console.WriteLine($"==Day07==\nThere are {day7.CountColorBags()} different bag colors");
+            Console.WriteLine($"There can be {day7.CountInsideColorBags()} bag colors");
+
+            var day8 = new Day08.Day08();
+            Console.WriteLine($"==Day08==\nThe accumulator's value is {day8.ValueInAccumulator()}");
+            Console.WriteLine($"The accumulated value for the modification is {day8.AccumulatorAfterChange()}");
+
+            var day9 = new Day09.Day09();
+            var oddNumber = day9.OddNumberFromSequence();
+            Console.WriteLine($"==Day09==\nThe number which doesn't follow the rule is {oddNumber}");
+            Console.WriteLine($"The sum of the smallest and largest numbers is {day9.SumOfSmallestAndLargestNumbers(oddNumber)}");
+
+            Console.ReadKey();
+        }
+    }
+}
