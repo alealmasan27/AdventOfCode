@@ -17,7 +17,7 @@ namespace AdventOfCode.Day10
 
         public List<int> ReadData()
         {
-            return File.ReadAllLines("Day010.txt").Select(x => Convert.ToInt32(x)).ToList();
+            return File.ReadAllLines("Day10.txt").Select(x => Convert.ToInt32(x)).ToList();
         }
 
         public long Multiply1JoltWith3Jolt()

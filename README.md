@@ -11,7 +11,7 @@ This repository contains my own implementation for the puzzles available [here](
 - .NET Core 3.1
 
 **Steps to run locally:** 
-1. Copy the Github repository locally
+1. Clone the Github repository locally
 2. Open the project in Visual Studio 2019
 3. Run the project
 

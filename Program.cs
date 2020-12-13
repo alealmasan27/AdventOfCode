@@ -46,6 +46,22 @@ namespace AdventOfCode
             Console.WriteLine($"==Day09==\nThe number which doesn't follow the rule is {oddNumber}");
             Console.WriteLine($"The sum of the smallest and largest numbers is {day9.SumOfSmallestAndLargestNumbers(oddNumber)}");
 
+            var day10 = new Day10.Day10();
+            Console.WriteLine($"==Day10==\nThe multiplication of 1 jolts with 3 jolts is: {day10.Multiply1JoltWith3Jolt()}");
+            Console.WriteLine($"There are {day10.CountNumberOfArrangements()} arrangements possible.");
+
+            var day11 = new Day11.Day11();
+            Console.WriteLine($"==Day11==\nThere are {day11.NumberOfOccupiedSeats(day11.CheckAdjacentSeats, 4)} seats occupied");
+            Console.WriteLine($"==Day11==\nThere are {day11.NumberOfOccupiedSeats(day11.CheckAdjacentSeatsUntil, 5)} seats occupied");
+
+            var day12 = new Day12.Day12();
+            Console.WriteLine($"==Day12==\nThe Manhattan Distance is {day12.CalculateManhattanDistance()}");
+            Console.WriteLine($"The Manhattan Distance is {day12.CalculateManhattanDistanceWithWayPoint()}");
+
+            var day13 = new Day13.Day13();
+            Console.WriteLine($"==Day13==\nThe multiplication gives {day13.MultiplyBusIdWithMinutesToWait()}");
+            Console.WriteLine($"The earliest timestamp is {day13.EarliestTimestamp()}");
+            
             Console.ReadKey();
         }
     }
