@@ -61,7 +61,14 @@ namespace AdventOfCode
             var day13 = new Day13.Day13();
             Console.WriteLine($"==Day13==\nThe multiplication gives {day13.MultiplyBusIdWithMinutesToWait()}");
             Console.WriteLine($"The earliest timestamp is {day13.EarliestTimestamp()}");
-            
+
+            var day14 = new Day14.Day14();
+            Console.WriteLine($"==Day14==\nSum Values in memory is {day14.SumValuesInMemory()}");
+            Console.WriteLine($"The sum of all possible numbers is {day14.SumAllValuesInMemory()}");
+
+            var day15 = new Day15.Day15();
+            Console.WriteLine($"==Day15==\nThe 2020th number is: {day15.NthNumberSpoken(2020)}");
+            Console.WriteLine($"The 30000000th number is: {day15.NthNumberSpoken(30000000)}");
             Console.ReadKey();
         }
     }
