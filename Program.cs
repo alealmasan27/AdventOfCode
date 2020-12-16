@@ -69,6 +69,11 @@ namespace AdventOfCode
             var day15 = new Day15.Day15();
             Console.WriteLine($"==Day15==\nThe 2020th number is: {day15.NthNumberSpoken(2020)}");
             Console.WriteLine($"The 30000000th number is: {day15.NthNumberSpoken(30000000)}");
+
+            var day16 = new Day16.Day16();
+            Console.WriteLine($"==Day16==\nThe Ticket Scanning error rate is: {day16.TicketScanningErrorRate()}");
+            Console.WriteLine($"The multiplication of departure values is: {day16.MultiplyDepartureValues()}");
+
             Console.ReadKey();
         }
     }
