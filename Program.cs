@@ -74,6 +74,14 @@ namespace AdventOfCode
             Console.WriteLine($"==Day16==\nThe Ticket Scanning error rate is: {day16.TicketScanningErrorRate()}");
             Console.WriteLine($"The multiplication of departure values is: {day16.MultiplyDepartureValues()}");
 
+            var day17 = new Day17.Day17();
+            Console.WriteLine($"==Day17==\nThere are {day17.CountActiveCubes<Tuple<int, int, int>>(3)} active cubes");
+            Console.WriteLine($"There are {day17.CountActiveCubes<Tuple<int, int, int, int>>(4)} active cubes");
+
+            var day18 = new Day18.Day18();
+            Console.WriteLine($"==Day18==\nThe sum is {day18.Eval()}");
+            Console.WriteLine($"The advanced sum is {day18.EvalAdvanced()}");
+
             Console.ReadKey();
         }
     }
